@@ -1,0 +1,35 @@
+//Print Pattern
+/* 
+ 
+   *
+  ***
+ *****
+*******
+
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+void  pattern(int n)
+{
+    int row,col,space;
+    for(row=1;row<=n;row++)
+    {
+        for(int space=1;space<=n-row;space++)
+        {
+            cout<<" ";
+        }
+        for(col=1;col<=row*2-1;col++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
+}
+int main()
+{
+    int n;
+    cin>>n;
+    pattern(n);
+}
